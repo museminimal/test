@@ -1,0 +1,59 @@
+.white-text {
+  font-family: sans-serif, 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  color: $colorWhite;
+}
+
+.main-text {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  color: $mainTextColor;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tariffs-subtitles {
+  font-family: sans-serif, 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: $boldTextColor;
+  margin-bottom: 8px;
+}
+
+.calculate-card__description-text {
+  font-family: sans-serif, 'Open Sans';
+  font-style: normal;
+  font-size: 16px;
+  color: $boldTextColor;
+  line-height: 34px;
+}
+
+.main-block-description__text {
+  max-width: 456px;
+  margin: 0 0 40px 68px;
+}
+
+.read-more-link {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $colorGreen;
+  margin-left: 68px;
+  position: relative;
+  padding-right: 45px;
+
+  &::after {
+    content: '';
+    background: url("@images/arrow-right.png")  no-repeat center/contain;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: block;
+  }
+}

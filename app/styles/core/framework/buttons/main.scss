@@ -1,0 +1,18 @@
+.button {
+  background: $colorGreen;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_submit {
+  padding: 12px 28px;
+}

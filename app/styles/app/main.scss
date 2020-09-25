@@ -1,0 +1,57 @@
+@import 'reset.scss';
+
+@import 'sections/header/main.scss';
+@import 'sections/promo/main.scss';
+@import 'sections/info/main.scss';
+@import 'sections/photos/main.scss';
+@import 'sections/tariffs/main.scss';
+@import 'sections/news/main.scss';
+
+html,
+body {
+  background: $baseBackgroundColor;
+  font-size: $baseFontSize;
+  font-family: $mainFont;
+  @include fontSmoothing();
+}
+
+.sections-title {
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: $boldTextColor;
+  letter-spacing: 0.045em;
+  padding-top: 13px;
+  position: relative;
+}
+
+.sections-title_sm {
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    width: 105px;
+    height: 1px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 30%;
+    background-color: $boldTextColor;
+  }
+}
+
+.sections-title_big {
+  font-size: 20px;
+
+  &::before {
+    content: '';
+    width: 105px;
+    height: 1px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 28%;
+    background-color: $boldTextColor;
+  }
+}

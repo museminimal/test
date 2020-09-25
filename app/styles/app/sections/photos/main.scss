@@ -1,0 +1,44 @@
+.photos {
+  .photos__inner {
+    padding: 55px 67px;
+    background: $colorWhite;
+
+    .photos__section-title {
+      max-width: 250px;
+      margin: 0 auto 14px;
+    }
+
+    .photos__description {
+      margin-bottom: 35px;
+    }
+
+    .photos__slider {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .photos__button-container {
+      max-width: 250px;
+      margin: 28px auto 0;
+
+      .photos__button {
+        padding: 12px 31px;
+
+        span {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 17px;
+            height: 1px;
+            position: absolute;
+            display: block;
+            top: 8px;
+            right: -20%;
+            background-color: $colorWhite;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.header {
+  .header__inner {
+    background: $colorWhite;
+
+    .header__top-section {
+      background: $colorGray;
+      padding: 0 67px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contacts {
+      background: $colorGray;
+      display: flex;
+      flex-basis: 30%;
+
+      .contacts__phone {
+        position: relative;
+
+        .phone {
+          padding: 5px 24px;
+        }
+
+        &::before {
+          content: '';
+          background: url("@images/phone.png")  no-repeat center/contain;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          display: block;
+          top: 2px;
+        }
+      }
+
+      .contacts__email {
+        margin-left: 34px;
+        position: relative;
+
+        .email {
+          padding: 5px 28px;
+        }
+
+        &::before {
+          content: '';
+          background: url("@images/email.png")  no-repeat center/contain;
+          width: 19px;
+          height: 15px;
+          position: absolute;
+          display: block;
+          top: 2px;
+        }
+      }
+    }
+
+    .logo__inner {
+      flex-basis: 30%;
+
+      .logo {
+        font-family: sans-serif, 'Open Sans';
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        color: $colorGreen;
+        display: inline-block;
+        margin-left: 92px;
+
+        span {
+          color: $colorWhite;
+        }
+      }
+    }
+
+    .authorization {
+      display: flex;
+      flex-basis: 30%;
+      justify-content: space-between;
+
+      .log-in, .sign-in {
+        flex-basis: 50%;
+        padding: 15px 26px;
+      }
+
+      .log-in {
+        position: relative;
+        padding-left: 50px;
+        display: block;
+
+        a {
+          margin-left: 5px;
+        }
+
+        &::before {
+          content: '';
+          background: url("@images/login.png")  no-repeat center/contain;
+          width: 41px;
+          height: 30px;
+          position: absolute;
+          display: block;
+          top: 9px;
+          left: 0;
+        }
+      }
+
+      .sign-in {
+        background: $colorGreen;
+
+        a {
+          margin-left: 10px;
+        }
+
+        .sign-in-text {
+          font-family: sans-serif, 'Open Sans';
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+          color: $colorWhite;
+        }
+      }
+    }
+
+    .navigation {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 8px 0;
+
+      .navigation-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+
+        .navigation-list__item {
+          font-family: sans-serif, 'Open Sans';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          color: $colorGray;
+
+          &:hover {
+            color: $colorGreen;
+          }
+        }
+      }
+    }
+  }
+}

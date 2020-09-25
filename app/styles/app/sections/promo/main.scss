@@ -1,0 +1,129 @@
+.promo__inner {
+  padding: 84px 210px;
+  background: url("@images/promo.jpg") no-repeat center/cover;
+
+  .registration {
+    background: rgba(47, 45, 55, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    padding: 46px 135px;
+
+  .registration__title {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    color: $colorWhite;
+    }
+
+    .registration__subtitle {
+      font-family: 'Muli', sans-serif;
+      font-style: normal;
+      font-size: 26px;
+      text-align: center;
+      color: $colorWhite;
+      margin-bottom: 63px;
+    }
+  }
+
+  .registration__form-inner {
+    background: $colorWhite;
+    border-radius: 50px;
+    margin: 0 0 35px 0;
+    padding: 15px 18px;
+
+    .registration__form {
+      display: flex;
+      justify-content: space-between;
+
+      .name-input, .email-input {
+        border: 1px solid $borderColor;
+        box-sizing: border-box;
+        border-radius: 50px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        width: 154px;
+        outline: none;
+      }
+
+      .email-input {
+        width: 219px;
+      }
+    }
+  }
+
+  .register-procedure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .register-procedure__item {
+      padding-top: 10px;
+      margin: 0 auto;
+      position: relative;
+
+      &::before {
+        content: '';
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        color: $colorWhite;
+        width: 15px;
+        height: 30px;
+        position: absolute;
+        display: block;
+        top: -10px;
+        left: 8px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .register-procedure__subtitle {
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: $colorWhite;
+        margin-top: 26px;
+      }
+    }
+
+    .register-procedure__item:not(:last-child) {
+      &::after {
+        content: '';
+        width: 96px;
+        height: 1px;
+        position: absolute;
+        display: block;
+        top: 43%;
+        left: 92%;
+        background-color: $colorWhite;
+      }
+    }
+
+    .register-procedure__item-first {
+
+      &::before {
+        content: '1';
+      }
+    }
+
+    .register-procedure__item-second {
+      &::before {
+        content: '2';
+      }
+    }
+
+    .register-procedure__item-third {
+      &::before {
+        content: '3';
+      }
+    }
+  }
+}

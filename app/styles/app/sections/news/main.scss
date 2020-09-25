@@ -1,0 +1,69 @@
+.news {
+  .news__inner {
+    padding: 50px 0 56px 67px;
+    background: $colorWhite;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 225px;
+      height: 320px;
+      position: absolute;
+      display: block;
+      top: 44%;
+      left: -45px;
+      background: url("@images/decor-left.png") no-repeat center/contain;
+    }
+
+    .news__section-title {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    .news__main-block {
+      display: flex;
+      margin-top: 39px;
+
+      .news__main-block-description {
+        flex-basis: 50%;
+
+        .main-block-description__title {
+          max-width: 456px;
+          text-align: left;
+          line-height: 20px;
+          margin-bottom: 37px;
+        }
+      }
+
+      .news__main-block-image {
+        flex-basis: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .news__button-container {
+      margin: 28px auto 0;
+      max-width: 250px;
+
+      .news__button {
+        span {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 17px;
+            height: 1px;
+            position: absolute;
+            display: block;
+            top: 8px;
+            right: -15%;
+            background-color: $colorWhite;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.tariffs {
+  .tariffs__inner {
+    padding: 48px 135px;
+    background: url("@images/tariffs.jpg") no-repeat center/cover;
+
+    .tariffs__calculate-card {
+      padding: 38px 34px 29px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid $colorGreen;
+      box-sizing: border-box;
+      backdrop-filter: blur(8px);
+      border-radius: 5px;
+
+      .tariffs__section-title {
+        margin: 0 auto 30px;
+        max-width: 93px;
+        position: relative;
+
+          &::before {
+            left: -3%;
+          }
+      }
+
+      .tariffs__calculate-card__inner {
+        display: flex;
+
+        .calculate-card__form {
+          flex-basis: 50%;
+        }
+
+        .calculate-card__description {
+          flex-basis: 50%;
+        }
+      }
+    }
+
+    .tariffs__input {
+      border: 1px solid $boldTextColor;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 10px 23px;
+      margin-bottom: 12px;
+      width: 373px;
+    }
+
+    .tariffs__radio-title {
+      color: $boldTextColor;
+      margin-right: 31px;
+    }
+
+    .calculate-card__description-alert-text {
+      position: relative;
+      font-size: 16px;
+      line-height: 22px;
+      color: $boldTextColor;
+      margin: 40px 0 30px;
+      padding-left: 54px;
+
+      &::before {
+        content: '';
+        background: url("@images/info.png")  no-repeat center/contain;
+        width: 31px;
+        height: 39px;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+      }
+
+      span {
+        color: #86BC42;
+      }
+
+      span {
+        &:nth-of-type(2) {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
